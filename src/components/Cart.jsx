@@ -20,12 +20,7 @@ const Cart = () => {
       <Typography variant="h4" gutterBottom>
         Cart
       </Typography>
-      <Typography variant="h6">
-        Total Quantity: {totalQuantity}
-      </Typography>
-      <Typography variant="h6" sx={{ mb: 2 }}>
-        Total Amount: ${totalAmount.toFixed(2)}
-      </Typography>
+      
       {items.length === 0 ? (
         <Typography variant="body1">No items in the cart</Typography>
       ) : (
@@ -71,6 +66,12 @@ const Cart = () => {
           ))}
         </Grid>
       )}
+      <Typography variant="h6">
+        Total Quantity: {totalQuantity}
+      </Typography>
+      <Typography variant="h6" sx={{ mb: 2 }}>
+        Total Amount: ${totalAmount.toFixed(2)}
+      </Typography>
     </Box>
   );
 };
