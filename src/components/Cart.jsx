@@ -66,12 +66,14 @@ const Cart = () => {
           ))}
         </Grid>
       )}
-      <Typography variant="h6">
+
+<Typography variant="h6">
         Total Quantity: {totalQuantity}
       </Typography>
       <Typography variant="h6" sx={{ mb: 2 }}>
         Total Amount: ${totalAmount.toFixed(2)}
       </Typography>
+      
     </Box>
   );
 };
