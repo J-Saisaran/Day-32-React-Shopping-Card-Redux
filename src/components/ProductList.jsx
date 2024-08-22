@@ -22,7 +22,7 @@ const ProductList = () => {
       </Typography>
       <Grid container spacing={3}>
         {products.products.map(product => (
-          <Grid item xs={2.4} sm={2.4} md={2.4} key={product.id}>
+          <Grid item xs={12} sm={6} md={3} key={product.id}>
             <Card>
               <CardMedia
                 component="img"
